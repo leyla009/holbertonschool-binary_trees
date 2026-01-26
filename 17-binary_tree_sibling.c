@@ -18,4 +18,4 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 
 	/* If node is the right child, sibling is the left child */
 	return (node->parent->left);
-}                                                             
+}
