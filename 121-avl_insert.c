@@ -21,9 +21,11 @@ avl_t *avl_insert_recursive(avl_t **tree, avl_t *parent,
 	}
 
 	if (value < (*tree)->n)
-		(*tree)->left = avl_insert_recursive(&((*tree)->left), *tree, new_node, value);
+		(*tree)->left = avl_insert_recursive(&((*tree)->left), 
+				*tree, new_node, value);
 	else if (value > (*tree)->n)
-		(*tree)->right = avl_insert_recursive(&((*tree)->right), *tree, new_node, value);
+		(*tree)->right = avl_insert_recursive(&((*tree)->right), 
+				*tree, new_node, value);
 	else
 		return (*tree);
 
