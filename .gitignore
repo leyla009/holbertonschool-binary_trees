@@ -1,0 +1,20 @@
+# === Vim Swap Files ===
+.*.swp
+*.swo
+*~
+
+# === Compiled Binaries ===
+*.out
+a.out
+[0-9]*-*
+!*.c
+!*.h
+
+# === Object Files & Libraries ===
+*.o
+*.a
+*.so
+
+# === Debugging Symbols ===
+*.dSYM/
+vgcore.*
